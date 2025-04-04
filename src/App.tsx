@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import WeatherCard from "./components/WeatherCard"
 import CityInput from "./components/CityInput";
 import { Container } from "@mui/material";
@@ -7,7 +7,6 @@ import "./App.css"
 
 
 function App() {
-  const [ city, setCity] = useState("");
   const { weather, error, fetchWeather, setWeather } = useFetchWeather();
 
   useEffect(() => {
@@ -29,7 +28,6 @@ function App() {
       padding: 2, }}>
       <CityInput
         onSearch={(typedCity) => {
-        //setCity(typedCity);
         fetchWeather(typedCity);
         }}
         error={error}
