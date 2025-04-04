@@ -1,0 +1,11 @@
+
+
+@media (max-width: 768px) {
+  .getW_typeW {
+    width: 90vw !important;
+  }
+  .mainContainer{ 
+    flex-direction: column;
+    align-items: center;
+  }
+}
