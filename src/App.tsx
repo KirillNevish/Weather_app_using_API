@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import WeatherCard from "./components/WeatherCard"
 import CityInput from "./components/CityInput";
 import { Container } from "@mui/material";
@@ -29,7 +29,7 @@ function App() {
       padding: 2, }}>
       <CityInput
         onSearch={(typedCity) => {
-        setCity(typedCity);
+        //setCity(typedCity);
         fetchWeather(typedCity);
         }}
         error={error}
